@@ -1,0 +1,22 @@
+$size: 60px
+
+.board
+  display: grid
+  grid-template-columns: repeat(3, $size)
+  grid-auto-rows: repeat(3, $size)
+
+
+.square
+  display: block
+  width: $size
+  height: $size
+  font-size: 1.5rem
+  &:disabled
+    background-color: none
+    color: black
+  &:disabled.win
+    color: red
+    background-color: orange
+    font-weight: bold
+
+

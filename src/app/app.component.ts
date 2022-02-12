@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppGameService } from './services/game.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'tic-tac-toe';
+
+  constructor(public appGameService: AppGameService) {}
 }
